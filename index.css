@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://www.nintendo.com/content/dam/noa/en_US/wallpapers/luigi/luigi-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.heading{
+    color: aliceblue;
+}
+.games-grid{
+    padding: 20px;
+    height: 500px;
+    width: 1000px;
+    display: grid;
+    /* grid-column-gap: 50px; */
+    grid-row-gap: 50px;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    cursor: pointer;
+}
+.game{
+    position: absolute;
+}
+.game-name{
+    width: 280px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: blue;
+}
+.game:hover{
+    opacity: 0.5;
+}

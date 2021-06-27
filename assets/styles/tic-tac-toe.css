@@ -1,0 +1,29 @@
+section {
+    text-align: center;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: 50px auto;
+    /* grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 70px 70px 70px; */
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
